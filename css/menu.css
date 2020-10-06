@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 /* 서브 공통 스타일 */
 
 /* sub title */
@@ -90,3 +92,9 @@
 /* footer control */
 #wrap{display: flex;min-height: 100vh;flex-direction: column;}
 #contents{padding: 110px 0 110px 0;flex: 1;}
+
+/* quick bar */
+#followquick{position: fixed;bottom: 124px;right: 12%;min-width: 80px;height: 140px;background:#fd7907;overflow: initial;display: flex;align-items: center;justify-content: center;box-sizing: border-box;border-radius: 50px;cursor: pointer;z-index: 100;overflow: hidden;transition: box-shadow 0.2s ease-out}/* 수정 */
+#followquick a{padding: 0 20px;color: #fff;font-size: 28px;line-height: 32px;}
+#followquick a::before{content:"";position: absolute;background: url("../images/menu/btn_quick_bg.png");left: calc(50% - 30px);top: calc(100% - 40px);width: 60px;height: 60px;}
+#followquick a span{font-family: yg-jalnan;margin-bottom: 20px;display: inline-block;}
