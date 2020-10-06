@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* 서브 공통 스타일 */
+
+/* sub title */
+#content{padding: 110px 0;}
+#content .subbanner{height: 280px;background: pink no-repeat 50% 0;background-size: cover;}
+.sub_bg{width: 1200px;margin: 0 auto;position: relative;}
+
+.subtit{left: 86px;top: 90px;position: absolute;}
+.subtit h2{display: inline-block;font-size: 60px;font-weight: 700;line-height: 60px;}
+.subtit p{display: inline-block;margin-left: 28px;font-weight: 500;line-height: 28px;vertical-align: bottom;}
+
+/* breadcrumb */
+.breadcrumb{position: absolute;left: 86px;top: 173px;}
+.breadcrumb ol{height: 17px;font-size: 18px;font-weight: 500;position: relative;}
+.breadcrumb ol li{float: left;}
+.breadcrumb ol li:first-child a{display: block;width: 16px;height: 16px;background: url("../images/common/sub_breadcrumb_home.png") no-repeat;position: absolute;top: 6px;}
+.breadcrumb ol li + li{margin-left: 16px;}
+.breadcrumb ol li + li::before{content: "";display:inline-block;background: url("../images/common/sub_icon_arrow1.png") no-repeat;width: 8px;height: 14px;margin: 0 24px;}
+.breadcrumb ol li + li + li{margin-left: 0px;}

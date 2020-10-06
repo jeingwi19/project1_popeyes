@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>파파이스 홈페이지</title>
+    <link rel="icon" href="images/common/popeyes_favicon.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/main.css">
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/gnb.js"></script>
+    <script>
+        /* swiperjs.com/demos/#fraction_pagination */
+        $(document).ready(function () {
+            /* 슬라이더 접근성
+            1. 자동재생이 되는 경우 반드시 사용자가 자동실행을 멈출 수 있어야 한다.
+            - 정지버튼을 만들어주거나, 슬라이더에 마우스를 진입하거나, 슬라이더에 포커스가 간 경우 멈추기
+            */
+            //본문1 슬라이더
+            //다양한 옵션 패러미터 https://swiperjs.com/api/#autoplay에서 참조
+            var mySwiper1 = new Swiper('.cnt1 .swiper-container', {
+                // Optional parameters
+                direction: 'horizontal', //vertical
+                loop: false, //터치할 경우 마지막 슬라이더에서 처음으로 되돌리지 않음
+
+                // 이전, 다음 버튼
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                //자동실행
+                autoplay: {
+                    delay: 5000, //1초 = 1000
+                    disableOnInteraction: false, //swiper이후에도 자동실행 동작
+                },
+            })
+            //본문1 자동 실행과 일시정지 추가
+            //일시정지 클릭
+            $('.cnt1 .controller .autostop').on('click', function () {
+                $(this).hide().siblings().show();
+                mySwiper1.autoplay.stop(); //https://swiperjs.com/api/#autoplay
+                return false;
+            });
+            //자동실행 클릭
+            $('.cnt1 .controller .autoplay').on('click', function () {
+                $(this).hide().siblings().show();
+                mySwiper1.autoplay.start();
+                return false;
+            });
+
+            //자동실행 클릭
+            $('.cnt7 .controller .autoplay').on('click', function () {
+                $(this).hide().siblings().show();
+                mySwiper7.autoplay.start();
+                return false;
+            });
+        });
+    </script>    
+</head>
+<body>
+    <div id="skip">
+        <a href="#contents">본문바로가기</a>
+    </div>
+    <div id="wrap">
+        <header id="header">
+            <div class="area">
+                <h1 class="logo"><a href="index.html"><img src="images/common/gnb_logo.png" alt="파파이스 홈"></a></h1>
+                <nav id="gnb">
+                    <h2 class="blind-b">주메뉴</h2> <!-- 숨김제목 -->
+                    <ul>
+                        <li class="active">
+                            <a href="menu/menu.html">메뉴</a>
+                            <ul>
+                                <li><a href="menu/menu.html">치킨</a></li>
+                                <li><a href="">치킨텐더</a></li>
+                                <li><a href="">테이크아웃팩</a></li>
+                                <li><a href="">버거</a></li>
+                                <li><a href="">사이드</a></li>
+                                <li><a href="">음료</a></li>
+                                <li><a href="">소스&amp;시즈닝</a></li>
+                                <li><a href="">영양정보</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">매장</a></li>
+                        <li><a href="">프로모션</a></li>
+                        <li><a href="">제휴할인</a></li>
+                        <li><a href="">브랜드스토리</a></li>
+                    </ul>
+                </nav>
+                <div class="util">
+                    <a data-toggle="modal" href="#" ><img src="images/common/icon_search1.png" alt="매장검색"></a>    
+                    <a data-toggle="modal" href="#" class="hdlogin"><img src="images/common/icon_login2.png" alt="로그인/회원가입"></a>
+                </div>    
+            </div>
+        </header>
+        <section id="content" class="cnt1">
+            <article class="mainbanner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <div class="txt_wrap">
+                                <div class="txt p_a">
+                                    <span class="blind-i">NEW</span>
+                                    <p>Tenderloin Chicken Burger</p>
+                                    <p class="tit_big">안심버거</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <div class="txt_wrap">
+                                <div class="txt p_a">
+                                    <span class="blind-i">EVENT</span>
+                                    <p>놀라운 맛에! 놀라운 가격!</p>
+                                    <p class="tit_big">런치세트</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controller p_a">
+                        <!-- 이전, 다음 버튼 -->
+                        <div class="swiper-button-prev prev_next"></div>
+                        <div class="swiper-button-next prev_next"></div>
+
+                        <!-- play, stop 버튼 -->
+                        <button class="autoplay play_stop" title="재생">
+                            <span class="blind-b">재생</span>
+                        </button>
+                        <button class="autostop play_stop" title="일시정지">
+                            <span class="blind-b">일시정지</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <article class="maincontent area">
+                <div class="cont_wrap">
+                    <ul>
+                        <li>
+                            <a href="homeservice/home.html">
+                                <div class="btn_txt_order">
+                                    <h3>온라인 주문</h3>
+                                    <span>배달 / 포장</span>
+                                    <strong>1833-8825</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a role="button" href="https://youtu.be/6lE3ajV3Ka0" title="파파이스 유튜브 새창" target="_blank"><img src="images/main/btn_youtube.jpg" alt="파파이스 더블 미트 머쉬룸 버거"></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="btn_txt">
+                                    <p>파파이스와 함께해요!</p>
+                                    <h3>가맹점 모집</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="btn_txt">
+                                    <p>고객의 소리를 듣겠습니다.</p>
+                                    <h3>온라인 상담</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="popnews area">
+                <h3>파파이스 소식</h3>
+                <ul>
+                    <li>
+                        <a role="button" href="https://www.instagram.com/p/CFqTEzih_YF/?utm_source=ig_web_button_share_sheet" title="파파이스 인스타그램 새창" target="_blank">
+                            <div class="sns_bg1">
+                                <span class="blind-b">파파이스 인스타그램 새창</span>
+                            </div>
+                            <span>popeyes_kr</span>
+                            <p>가심비 좋게! 햄버거 먹는 방법? <br>파파이스에서 할인쿠폰 받고 햄버거 먹자!</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a role="button" href="https://www.instagram.com/p/CFGNkbYh70Z/?utm_source=ig_web_button_share_sheet" title="파파이스 인스타그램 새창" target="_blank">
+                            <div class="sns_bg2">
+                                <span class="blind-b">파파이스 인스타그램 새창</span>
+                            </div>
+                            <span>popeyes_kr</span>
+                            <p>여름이 가고 시원한 가을이 왔는데, <br>#안심버거 먹기 딱 좋은 날씨 아닌가요?</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a role="button" href="https://www.instagram.com/p/CEqYcfQpE7o/?utm_source=ig_web_button_share_sheet" title="파피이스 인스타그램 새창" target="_blank">
+                            <div class="sns_bg3">
+                                <span class="blind-b">파파이스 인스타그램 새창</span>
+                            </div>
+                            <span>popeyes_kr</span>
+                            <p>안녕! 친구들 나는 새로운 #안심버거라구해 <br>#짱맛있어 안심하고 먹자구</p>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <footer id="footer">
+            <div class="area">
+                <div class="ftlink">
+                    <ul>
+                        <li><a href="">개인정보취급방침</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">온라인상담</a></li>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">가맹점개설</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <p>(주)TS푸드엔시스템</p>
+                    <span>대표 : 이원철</span><span>전화 : 080-424-8824</span><br>
+                    <span>전자우편 : webmaster@popeyes.co.kr</span><span>사업자등록번호 : 219-81-17332</span> 
+                    <address>경기도 성남시 분당구 황새울로 360번길  35 서현현대프라자 5층(서현동 246-6)</address>
+                    <p>Copyright &copy;,Popeyes Louisiana Kitchen, Inc. 2020. All rights reserved.</p>
+                </div>
+                <div class="sns">
+                    <div class="sns3">
+                        <a role="button" href="https://www.facebook.com/PopeyesKorea/" target="_blank" title="파파이스 페이스북 새창"><img src="images/common/icon_facebook.png" alt="파파이스 페이스북"></a>
+                        <a role="button" href="https://www.instagram.com/popeyes_kr/?hl=ko" title="파파이스 인스타그램 새창" target="_blank"><img src="images/common/icon_insta.png" alt="파파이스 인스타그램"></a>
+                        <a role=" button" href="https://www.youtube.com/channel/UCjKeJXia7vy2dDge-Z7op4w/featured" title="파파이스 유튜브 새창" target="_blank"><img src="images/common/icon_youtube.png" alt="파파이스 유튜브"></a>
+                    </div>
+                    <a role="button" href="https://www.popeyes.com/" title="파파이스 글로벌 홈페이지 새창" target="_blank"><img src="images/common/button_global_web.png" alt="파파이스 글로벌 홈페이지"></a>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+</body>
+</html>

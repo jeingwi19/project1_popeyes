@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>치킨 : 메뉴 : 파파이스</title>
+    <link rel="icon" href="../images/common/popeyes_favicon.ico">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/menu.css">
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/gnb.js"></script>
+    <script src="../js/tab.js"></script>
+    <script>
+        $(document).ready(function () {
+          $('#menuTab #tab2, #menuTab #tabpanel2').addClass('active').attr('tabIndex', 0);
+          $('#menuTab #tab2').attr('aria-selected', true).siblings().attr('aria-selected', false);
+          $('#menuTab #tabpanel2').attr('aria-hidden', false).siblings('#tabpanel').attr('aria-hidden', true);
+        });
+      </script>
+</head>
+<body>
+    <div id="skip">
+        <a href="#contents">본문바로가기</a>
+    </div>
+    <div id="wrap">
+        <header id="header">
+            <div class="area">
+                <h1 class="logo"><a href="../index.html"><img src="../images/common/gnb_logo.png" alt="파파이스 홈"></a></h1>
+                <nav id="gnb">
+                    <h2 class="blind-b">주메뉴</h2> <!-- 숨김제목 -->
+                    <ul>
+                        <li class="active">
+                            <a href="menu.html">메뉴</a>
+                            <ul>
+                                <li><a href="tab1.html">치킨</a></li>
+                                <li><a href="tab2.html">치킨텐더</a></li>
+                                <li><a href="tab3.html">테이크아웃팩</a></li>
+                                <li><a href="tab4.html">버거</a></li>
+                                <li><a href="tab5.html">사이드</a></li>
+                                <li><a href="tab6.html">음료</a></li>
+                                <li><a href="tab7.html">소스&amp;시즈닝</a></li>
+                                <li><a href="tab8.html">영양정보</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">매장</a></li>
+                        <li><a href="">프로모션</a></li>
+                        <li><a href="">제휴할인</a></li>
+                        <li><a href="">브랜드스토리</a></li>
+                    </ul>
+                </nav>
+                <div class="util">
+                    <a data-toggle="modal" href="#" ><img src="../images/common/icon_search1.png" alt="매장검색"></a>    
+                    <a data-toggle="modal" href="#" class="hdlogin"><img src="../images/common/icon_login2.png" alt="로그인/회원가입"></a>
+                </div>    
+            </div>
+        </header>
+        <section id="contents">
+            <article class="subbanner">
+                <div class="sub_bg">
+                    <div class="subtit">
+                        <h2 class="title txt_l menu_ck">메뉴</h2>
+                        <p>12시간 이상 숙성하고 루이지애나 맛을 <br>느낄 수 있는 정통 파파이스</p>
+                    </div>
+                    <nav class="breadcrumb" aria-label="사이트 이동 경로">
+                        <ol>
+                            <li>
+                                <a href="../index.html">
+                                    <span class="blind-b">홈</span>
+                                </a>
+                            </li>
+                            <li><a href="tab1.html">메뉴</a></li>
+                            <!-- <li aria-current="page"><a href="">치킨</a></li> -->
+                        </ol>
+                    </nav>
+                </div>
+            </article>
+
+            <article class="subcontent area">
+                <div id="menuTab" class="p_r">
+                    <ul role="tablist" class="tablist" arai-label="메뉴 리스트">
+                        <li role="tab" class="tab first" id="tab1" aria-controls="tabpanel1">
+                            <span>치킨</span>
+                        </li>
+                        <li role="tab" class="tab" id="tab2" aria-controls="tabpanel2">
+                            <span>치킨<br>텐더</span>
+                        </li>
+                        <li role="tab" class="tab" id="tab3" aria-controls="tabpanel3">
+                            <span>테이크<br>아웃팩</span>
+                        </li>
+                        <li role="tab" class="tab" id="tab4" aria-controls="tabpanel4">
+                            <span>버거</span>
+                        </li>
+                        <li role="tab" class="tab" id="tab5" aria-controls="tabpanel5">
+                            <span>사이드</span>
+                        </li>
+                        <li role="tab" class="tab" id="tab6" aria-controls="tabpanel6">
+                            <span>음료</span>
+                        </li>
+                        <li role="tab" class="tab" id="tab7" aria-controls="tabpanel7">
+                            <span>소스&amp;<br>시즈닝</span>
+                        </li>
+                        <li role="tab" class="tab last" id="tab8" aria-controls="tabpanel8">
+                            <span>영양<br>정보</span>
+                        </li>
+                    </ul>
+                    <div class="result">
+                        <div class="result_tit">
+                            메뉴 <span class="txt_count">4</span> 개
+                        </div>
+                    </div>
+                    <div class="filter p_r" id="filter">
+                        <div class="fliter_box clearfix">
+                            <a href="" class="fbox_tit borderbox" role="botton">
+                                정렬순
+                            </a>
+                            <ul class="dropdown_list p_a">
+                                <li><button type="button">추천순</button></li>
+                                <li><button type="button">최신순</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn_filter_result p_a">
+                        <button type="button">조회</button>
+                    </div>
+                    <div role="tabpanel" class="tabpanel" id="tabpanel1" aria-labelledby="tab1">
+                        <ul>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/chicken/01_spicychi.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>스파이시 치킨</strong>
+                                        <p>매콤한 케이준 양념이 맛있게 베어있는 <br>바삭함과 매콤함이 한입 가득 치킨</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+1,239</span>
+                                        </a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cilli" title="매콤한 맛">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/chicken/02_mildchi.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>마일드 치킨</strong>
+                                        <p>겉은 바삭바삭하고 속살은 부드러워 <br>어린이가 먹기에 적당한 치킨</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+1,067</span>
+                                        </a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/chicken/03_kjwing.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>케이준 윙</strong>
+                                        <p>매콤하게 양념하여 바삭하게 튀긴 <br>치킨의 날개</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+1,021</span></a>
+                                            <div class="info_right p_a">
+                                                <ul>
+                                                    <li class="icon_cilli" title="매콤한 맛">
+                                                        <span class="blind-b"> 매콤한 맛 </span>
+                                                    </li>
+                                                    <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                        <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/chicken/04_chilpchi.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>칠리퐁당치킨 2조각</strong>
+                                        <p>특제 소스에 푹 담궜다 뺀, 매콤달콤한 <br>소스가 듬뿍 묻은 양념치킨</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+629</span></a>
+                                            <div class="info_right p_a">
+                                                <ul>
+                                                    <li class="icon_cilli" title="매콤한 맛">
+                                                        <span class="blind-b"> 매콤한 맛 </span>
+                                                    </li>
+                                                    <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                        <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tabpanel" id="tabpanel2" aria-labelledby="tab2">
+                        <ul>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/chickenTender/01_fingerf.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>핑거휠레</strong>
+                                        <p>치킨속 안심살로 만들어 부드럽고 연한 <br>먹기편한 고단백 저칼로리 고급 치킨</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+79</span></a>
+                                            <div class="info_right p_a">
+                                                <ul>
+                                                    <li class="icon_cilli" title="매콤한 맛">
+                                                        <span class="blind-b"> 매콤한 맛 </span>
+                                                    </li>
+                                                    <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                        <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/chickenTender/02_wekidchicken.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>위키드치킨</strong>
+                                        <p>자유분방하게 생긴 재미있는 모습의 <br>새로운 순살 치킨</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+58</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tabpanel" id="tabpanel3" aria-labelledby="tab3">
+                        <ul>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/takeOutPack/01_chick8Pack.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>치킨 8조각팩</strong>
+                                        <p>스파이시 치킨 / 마일드 치킨</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+154</span></a>
+                                            <div class="info_right p_a">
+                                                <ul>
+                                                    <li class="icon_cilli" title="매콤한 맛">
+                                                        <span class="blind-b"> 매콤한 맛 </span>
+                                                    </li>
+                                                    <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                        <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/takeOutPack/02_fingerfPack.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>핑거휠레 팩</strong>
+                                        <p>치킨 속 안심 살 가득 핑거휠레 팩</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+92</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/takeOutPack/03_kwingPack.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>케이준 윙 팩</strong>
+                                        <p>날개만 바삭하게 튀긴 12조각 팩</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+108</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cilli" title="매콤한 맛">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tabpanel" id="tabpanel4" aria-labelledby="tab4">
+                        <ul>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/burger/01_cajunT_burger.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>케이준 통 버거</strong>
+                                        <p>매콤한 치킨 통가슴살과 고급 햄 위에 <br>치즈와 칠리 소스의 케이준 통 버거</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+338</span></a>
+                                            <div class="info_right p_a">
+                                                <ul>
+                                                    <li class="icon_cilli" title="매콤한 맛">
+                                                        <span class="blind-b"> 매콤한 맛 </span>
+                                                    </li>
+                                                    <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                        <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/burger/02_cheese_bacon_burger.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>치즈베이컨치킨버거</strong>
+                                        <p>야채, 베이컨, 화이트치즈와 체다치즈가 <br>어우러진 부드러운 치킨버거</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+820</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/burger/03_gallicC_burger.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>갈릭치킨버거</strong>
+                                        <p>닭가슴살 패티에 갈릭소스와 바삭한 <br>갈릭칩이 듬뿍 들어간 치킨버거</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+946</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/burger/04_cajun_extr_burger.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>케이준익스트림치킨버거</strong>
+                                        <p>7가지 매콤하게 숙성한 닭가슴살과 <br>야채가 어우러진 정통 치킨버거</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+1,219</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cilli" title="매콤한 맛">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/burger/05_chicken_fillet_burger.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>치킨휠레 버거</strong>
+                                        <p>매콤한 통가슴살과 스위트 칠리소스, <br>피클과 야채 가득한 정통치킨버거</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+1,302</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cilli" title="매콤한 맛">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/burger/06_hot_pepper_burger.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>핫페퍼로스트맛치킨버거</strong>
+                                        <p>로스트 소스를 뿌린 치킨 닭다리살과 <br>신선한 야채가 듬뿍 매콤 치킨버거</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+807</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cilli" title="매콤한 맛">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/burger/07_dakDal_burger.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>닭달버거</strong>
+                                        <p>부드러운 닭다리살과 달콤한 어니언 <br>소스가 조화로운 치킨버거</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+1,009</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cilli" title="매콤한 맛">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_coupon" title="할인 쿠폰 적용">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/burger/08_shrimp_burger.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>새우버거</strong>
+                                        <p>새우와 타르타르소스를 곁들인 <br>상큼하고 신선한 새우버거</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+267</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/burger/09_bulGoGi_burger.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>불고기버거</strong>
+                                        <p>담백하고 부드러운 육질의 패티에 <br>불고기 소스가 가미된 불고기버거</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+102</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/burger/10_onionMeet_burger.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>어니언미트버거</strong>
+                                        <p>부드럽고 달콤한 불고기 패티와 <br>머스타드 소스가 조화로운 버거</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+93</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tabpanel" id="tabpanel5" aria-labelledby="tab5">
+                        <ul>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/side/01_cajunFiredR.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>케이준후라이 R</strong>
+                                        <p>케이준 양념으로 더욱 고소하고 <br>바삭한 케이준 후라이</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+81</span></a>
+                                            <div class="info_right p_a">
+                                                <ul>
+                                                    <li class="icon_cillii">
+                                                        <span class="blind-b"> 매콤한 맛 </span>
+                                                    </li>
+                                                    <li class="icon_couponn">
+                                                        <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/side/02_cajunFiredL.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>케이준후라이 L</strong>
+                                        <p>케이준 양념으로 더욱 고소하고 <br>바삭한 케이준 후라이</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+75</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/side/03_biscuit.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>비스킷</strong>
+                                        <p>갓 구워 고소하고 <br>부드러운 비스킷</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+108</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/side/04_coleslaw.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>코올슬로</strong>
+                                        <p>신선한 양배추로 만든 상큼한 <br>샐러드</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+12</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/side/05_cornsalad.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>콘샐러드</strong>
+                                        <p>고소한 옥수수 샐러드</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+108</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/side/06_cheeseStick.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>치즈스틱</strong>
+                                        <p>고소하고 쫄깃한 치즈를 느낄 수 <br>있는 치즈 스틱</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+60</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tabpanel" id="tabpanel6" aria-labelledby="tab6">
+                        <ul>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/Beverage/01_americano_hotchoco.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>아메리카노/핫초코</strong>
+                                        <p>따뜻한 파파이스 음료를 즐기세요</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+23</span></a>
+                                            <div class="info_right p_a">
+                                                <ul>
+                                                    <li class="icon_cillii">
+                                                        <span class="blind-b"> 매콤한 맛 </span>
+                                                    </li>
+                                                    <li class="icon_couponn">
+                                                        <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/Beverage/02_cola_max.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>콜라/맥스 콜라</strong>
+                                        <p></p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+64</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/Beverage/03_cider.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>사이다/미린다</strong>
+                                        <p></p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+49</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/Beverage/04_ice_tea.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>아이스티</strong>
+                                        <p></p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+22</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/Beverage/05_orange_juice.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>오렌지주스</strong>
+                                        <p></p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+13</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/Beverage/06_ice_americano.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>아이스아메리카노</strong>
+                                        <p>시원한 파파이스만의 <br> 아이스아메리카노</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+60</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/Beverage/07_remonede.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>레모네이드</strong>
+                                        <p>청량한 레몬 가득한 <br>레모네이드</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+37</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tabpanel" id="tabpanel7" aria-labelledby="tab7">
+                        <ul>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/sauces/01_cheeses_sauce.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>체다치즈소스</strong>
+                                        <p></p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+38</span></a>
+                                            <div class="info_right p_a">
+                                                <ul>
+                                                    <li class="icon_cillii">
+                                                        <span class="blind-b"> 매콤한 맛 </span>
+                                                    </li>
+                                                    <li class="icon_couponn">
+                                                        <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/sauces/02_hotchilly_sauce.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>핫 칠리소스</strong>
+                                        <p></p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+21</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cilli" title="매콤한 맛">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/sauces/03_mustard_sauce.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>머스타드소스</strong>
+                                        <p>핑거휠레 2조각 구매시 <br>1개 무료 제공</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+13</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/sauces/04_onionCream_sauce.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>어니언크림소스</strong>
+                                        <p>위키드 치킨 구매시 <br>1개 무료 제공</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+22</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p_r">
+                                <a href="">
+                                    <span class="label p_a">NEW</span>
+                                    <img src="../images/menu/sauces/05_butterGaillic.jpg" alt="">
+                                    <div class="menu_txt">
+                                        <strong>버터갈릭시즈닝</strong>
+                                        <p>칠리퐁당치킨2조각, 갈릭후라이 <br>구매시 1개 무료 제공</p>
+                                    </div>
+                                    <div class="menu_info">
+                                        <a href="">
+                                            <img src="../images/menu/icon_chat.png" alt="">
+                                            <span>+13</span></a>
+                                        <div class="info_right p_a">
+                                            <ul>
+                                                <li class="icon_cillii">
+                                                    <span class="blind-b"> 매콤한 맛 </span>
+                                                </li>
+                                                <li class="icon_couponn">
+                                                    <span class="blind-b"> 할인 쿠폰 적용 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer id="footer">
+            <div class="area">
+                <div class="ftlink">
+                    <ul>
+                        <li><a href="">개인정보취급방침</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">온라인상담</a></li>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">가맹점개설</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <p>(주)TS푸드엔시스템</p>
+                    <span>대표 : 이원철</span><span>전화 : 080-424-8824</span><br>
+                    <span>전자우편 : webmaster@popeyes.co.kr</span><span>사업자등록번호 : 219-81-17332</span> 
+                    <address>경기도 성남시 분당구 황새울로 360번길  35 서현현대프라자 5층(서현동 246-6)</address>
+                    <p>Copyright &copy;,Popeyes Louisiana Kitchen, Inc. 2020. All rights reserved.</p>
+                </div>
+                <div class="sns">
+                    <div class="sns3">
+                        <a role="button" href="https://www.facebook.com/PopeyesKorea/" target="_blank" title="파파이스 페이스북 새창"><img src="../images/common/icon_facebook.png" alt="파파이스 페이스북"></a>
+                        <a role="button" href="https://www.instagram.com/popeyes_kr/?hl=ko" title="파파이스 인스타그램 새창" target="_blank"><img src="../images/common/icon_insta.png" alt="파파이스 인스타그램"></a>
+                        <a role="button" href="https://www.youtube.com/channel/UCjKeJXia7vy2dDge-Z7op4w/featured" title="파파이스 유튜브 새창" target="_blank"><img src="../images/common/icon_youtube.png" alt="파파이스 유튜브"></a>
+                    </div>
+                    <a role="button" href="https://www.popeyes.com/" title="파파이스 글로벌 홈페이지 새창" target="_blank"><img src="../images/common/button_global_web.png" alt="파파이스 글로벌 홈페이지"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* home.html 태그 초기화 */
+form, th, td, input, select, button, input[type="text"]{margin: 0;padding: 0;}
+input::placeholder{color: #b7b7b7;}
+table{border-spacing: 0;border-collapse: collapse;}
+caption{width: 1px;height: 1px;overflow: hidden;margin: -1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
+input, select, textarea, button{font-family: inherit;z-index: inherit;font-style: inherit;}
+input[type="text"]{border: 2px solid #d9d9d9;padding: 20px 40px;border-radius: 40px;font-family: "Noto Sans KR";font-size: 20px;color: #434343}
+button{font-family: "Noto Sans KR";}
+
+/* sub title */
+#wrap{display: flex;min-height: 100vh;flex-direction: column;}
+#contents{padding: 110px 0 110px 0;flex: 1;}
+#contents .subbanner{height: 280px;background: url("../images/homeservice/subtit_bg_homeservice.jpg") no-repeat center;background-size: cover;}
+.sub_bg{width: 1200px;margin: 0 auto;position: relative;}
+
+.subtit{left: 86px;top: 90px;position: absolute;}
+.subtit h2{display: inline-block;font-size: 60px;font-weight: 700;line-height: 60px;}
+.subtit p{display: inline-block;margin-left: 28px;font-weight: 500;line-height: 28px;vertical-align: bottom;}
+
+/* breadcrumb */
+.breadcrumb{position: absolute;left: 86px;top: 173px;}
+.breadcrumb ol{height: 17px;font-size: 18px;font-weight: 500;position: relative;}
+.breadcrumb ol li{float: left;}
+.breadcrumb ol li:first-child a{display: block;width: 16px;height: 16px;background: url("../images/common/sub_breadcrumb_home.png") no-repeat;position: absolute;top: 6px;}
+.breadcrumb ol li + li{margin-left: 16px;}
+.breadcrumb ol li + li::before{content: "";display:inline-block;background: url("../images/common/sub_icon_arrow1.png") no-repeat;width: 8px;height: 14px;margin: 0 24px;}
+.breadcrumb ol li + li + li{margin-left: 0px;}
+
+/* h3 공통 스타일 */
+#orderTab{width: 1028px;margin: 120px auto 0;}
+.step_tit{font-size: 24px;line-height: 40px;}
+.step1 h3{position: relative;left: 102px;}
+.step1 h3::before{content:"";position: absolute;background: url("../images/homeservice/img_step1.png") no-repeat;left: -102px;top: 0;width: 90px;height: 40px;}
+.step2 h3, .step3 h3{width: 926px;}
+.step2 h3{position: relative;left: 102px;}
+.step2 h3::before{content:"";position: absolute;background: url("../images/homeservice/img_step2.png") no-repeat;left: -102px;top: 0;width: 90px;height: 40px;}
+.step3 h3{position: relative;left: 102px;}
+.step3 h3::before{content:"";position: absolute;background: url("../images/homeservice/img_step3.png") no-repeat;left: -102px;top: 0;width: 90px;height: 40px;}
+.tabpanel{margin-top: 360px;}
+.step3{margin-top: 120px;}
+
+/* step1 */
+.tablist, .step_cnt{margin-top: 40px;}
+.tablist li{float: left;color: #b7b7b7;width: 500px;height: 200px;border-radius: 40px;cursor: pointer;position: relative;overflow: hidden;transition: all 0.1s;}
+.tablist li:nth-child(1){background: url("../images/homeservice/tab1_off.png") no-repeat;}
+.tablist li:nth-child(1)::before{content: "";position: absolute;width: 0;height: 100%;top: 0;right: 0;z-index: 1;background-image: url("../images/homeservice/tab1_on.png");transition: all 0.2s;}
+.tablist li:nth-child(2){background: url("../images/homeservice/tab2_off.png") no-repeat;}
+.tablist li:nth-child(2)::before{content: "";position: absolute;width: 0;height: 100%;top: 0;right: 0;z-index: 1;background-image: url("../images/homeservice/tab2_on.png");transition: all 0.2s;}
+.tablist li.active{color: #fff;}
+.tablist li.active::before{width: 100%;}
+.tablist li + li{margin-left: 28px;}
+.tablist li div{vertical-align: middle;padding: 0 60px;position: absolute;z-index: 2;top: 36px;}
+.tablist li strong{font-size: 32px;}
+.tablist li p{font-size: 18px;line-height: 28px;margin-top: 20px;}
+
+/* step2 */
+.w1028{width: 1028px;}
+
+#schAddr table td{font-size: 24px;color: #666;}
+
+#schAddr .addr1{width: 716px;margin-bottom: 28px;}
+#schAddr .addr2{width: 316px;margin-right: 16px;}
+#schAddr .addr3, #schAddr .addr4{width: 56px;margin-right: 8px;}
+#schAddr .addr4{margin-left: 16px;}
+
+#schAddr table td p{font-size: 14px;color: #b7b7b7;line-height: 24px;margin: 28px 0 0 40px;}
+
+.btn_group{position: relative;}
+.btn_group .btn{font-size: 24px;font-weight: 700;width: 200px;height: 72px;text-align: center;border-radius: 36px;color: #fff;position: absolute;right: 0;top: 2px;}
+.btn_group .btn_f{background: #b7b7b7;}
+.btn_group .btn_s, .btn_group .btn_sf{background: #ff7b00;}
+
+.bnt_cancle{position: absolute;top: calc(50% - 28px);right: 268px;}
+
+.step3{position: relative;}
+.btn_clear{font-size: 18px;color: #b7b7b7;position: absolute;right: 12px;top: 6px;}
+.step3:last-child::after{content: "";position: absolute;right: 88px;top: 6px;background-image: url("../images/homeservice/icon_trash.png");width: 28px;height: 28px;}
+
+#orderTab .tabpanel{display: none;}
+#orderTab .tabpanel.active{display: block;}
+
+/* tabTogo */
+#tabpanelTogo .step2{margin-top: -40px;}
+#orderTab .tablist li:nth-child(2).active{margin-bottom: 920px;}
+
+#tabpanelTogo .map{width: 1028px;height: 500px;margin-top: 4px;background: #e9e9e9;border-radius: 14px;overflow: hidden;box-sizing: border-box;}
+
+.btn_next{margin: 0 auto;width: 428px;margin-top: 40px;}
+.btn_next ul{height: 72px;}
+.btn_next ul li{float: left;}
+.btn_next ul li + li{margin-left: 28px;}
+.btn_next button{font-size: 24px;font-weight: 700;width: 200px;height: 72px;text-align: center;border-radius: 36px;color: #fff;}
+.btn_next .btn_togo_next{background: #ff7b00;}
+.btn_next .btn_togo_cancle{background: #b7b7b7;}
