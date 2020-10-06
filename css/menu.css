@@ -38,6 +38,8 @@
 #menuTab .tablist li span{display: table-cell;font-size: 24px;text-align: center;font-weight: 700;width: 104px;height: 104px;color: transparent;line-height: 28px;vertical-align: middle;}
 #menuTab .tablist li:hover span, #menuTab .tablist li:focus span, #menuTab .tablist li.active span{background: url("../images/menu/tab_menu_hover.png") no-repeat;color: #fff;}
 
+
+
 /* .result_list */
 .result{width: 98px;position: relative;left: 102px;}
 .result .result_tit{line-height: 18px;font-size: 18px;font-weight: 500;}

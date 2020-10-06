@@ -4,7 +4,7 @@
 
 /* 공통 스타일 */
 #wrap{display: flex;min-height: 100vh;flex-direction: column;}
-#content{padding: 110px 0 100px 0;flex: 1;}
+#contents{padding: 110px 0 100px 0;flex: 1;}
 
 .cnt1 .mainbanner{width: 100%;}
 .cnt1 .swiper-slide{background: no-repeat center;background-size: cover;box-sizing: border-box;align-items: center;height: 450px;position: relative;}

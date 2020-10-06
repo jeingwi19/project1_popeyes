@@ -51,7 +51,6 @@ header.active::after{content:""; position:absolute; left: 0; top: 110px;  width:
 .util{position: absolute;right: 0;top: calc(50% - 20px);}
 .util .hdlogin{margin: 0 14px 0 20px;}
 
-/* #contents{height: 3500px;} */
 
 /* footer */
 #footer{background: #434343;padding: 60px 0;height: 280px;font-size: 14px; color: #b7b7b7;box-sizing: border-box;}
