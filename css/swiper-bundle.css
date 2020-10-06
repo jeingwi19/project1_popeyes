@@ -175,7 +175,7 @@
 }
 .swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-next:after {
-  content: 'prev';
+  /* content: 'prev'; */
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
@@ -184,7 +184,7 @@
 }
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
-  content: 'next';
+  /* content: 'next'; */
 }
 .swiper-button-prev.swiper-button-white,
 .swiper-button-next.swiper-button-white {

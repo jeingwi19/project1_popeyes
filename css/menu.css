@@ -39,11 +39,11 @@
 #menuTab .tablist li:hover span, #menuTab .tablist li:focus span, #menuTab .tablist li.active span{background: url("../images/menu/tab_menu_hover.png") no-repeat;color: #fff;}
 
 
-
+.tabpanel:focus{outline-color: transparent;}
 /* .result_list */
-.result{width: 98px;position: relative;left: 102px;}
-.result .result_tit{line-height: 18px;font-size: 18px;font-weight: 500;}
-.result .result_tit span::before{content: "";position: absolute;top: 2px;left: -16px;background: url("../images/menu/icon_arrow1.png");width: 8px;height: 14px;}
+.result{width: 98px;}
+.tabpanel .result_tit{line-height: 18px;font-size: 18px;font-weight: 500;position: relative;left: 102px;top: 14px;display: inline-block;}
+.tabpanel .result_tit span::before{content: "";position: absolute;top: 2px;left: -16px;background: url("../images/menu/icon_arrow1.png");width: 8px;height: 14px;}
 
 .result, .filter{font-size: 18px;font-weight: 500;display: inline-block;}
 
@@ -55,14 +55,14 @@
 
 .fliter_box ul:last-child{position: absolute;border: 1px solid #d9d9d9;width: 118px;border-radius: 14px;height: 38px;}
 .fliter_box:hover ul{position: absolute;top: 0px;left: 0;width: 118px;height: 72px;padding: 40px 0 10px;background: #fff;border: 1px solid #d9d9d9;line-height: 38px;border-radius: 14px;z-index: -1;transition: all 0.3s;}
-.fliter_box ul li button{display: none;position: absolute;top: 0;margin-left: 22px;font-size: 16px;font-weight: 700;color: #666;}
+.fliter_box ul li button{display: none;position: absolute;top: 0;left: -12px;font-size: 16px;font-weight: 700;color: #666;}
 .fliter_box:hover ul li button{display: block;margin-left: 22px;font-size: 16px;font-weight: 700;color: #666;line-height: 38px;position: relative;top: 0;}
 
 .fliter_box ul li:hover button, .fliter_box ul li button:focus{text-decoration: underline;color: #000;}
 
 .btn_filter_result{position: absolute;}
-.btn_filter_result button{font-family: "Noto Sans KR";font-size: 18px;font-weight: 500;width: 60px;height: 40px;background: #666;border-radius: 14px;color:#fff;position: absolute;left: 1060px;top: -24px;}
-
+.btn_filter_result button{font-family: "Noto Sans KR";font-size: 18px;font-weight: 500;width: 60px;height: 40px;background: #666;border-radius: 14px;color:#fff;position: absolute;left: 1060px;top: -24px;z-index: 10;}
+#menuTab .fliter_box .dropdown_list{width: 118px;position: absolute;top: -80px;}
 
 /* menuTab tabpanel */
 #menuTab .tabpanel ul{width: 1200px;margin: 80px auto;}
@@ -75,7 +75,8 @@
 #menuTab .tabpanel .menu_txt, #menuTab .tabpanel .menu_info{padding: 0 20px;/* background: red; */}
 #menuTab .tabpanel .menu_txt p{width: 326px;height: 46px;}
 #menuTab .tabpanel .menu_info{margin-top: 38px;line-height: 28px;border-bottom: 1px solid #d9d9d9;padding-bottom: 28px;}
-#menuTab .tabpanel .menu_info a span{margin-left: 10px;color: #666;}
+#menuTab .tabpanel .menu_info a span{display: inline-block;margin-left: 36px;color: #666;}
+#menuTab .tabpanel .menu_info a span::before{content: "";position: absolute;left: 20px;top: 551px;width: 28px;height: 28px;background: url("../images/menu/icon_chat.png");}
 #menuTab .tabpanel .menu_info .menu_event ul{height: 17px;}
 
 .menu_event ul li{float: left;}

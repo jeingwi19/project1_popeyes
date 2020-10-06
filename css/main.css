@@ -67,13 +67,23 @@ h3{font-family: yg-jalnan;}
 .popnews ul li{float: left;width: 368px;height: 498px;background:#fff;border-radius: 4px;border: 1px solid #d9d9d9;position: relative;}
 .popnews ul li + li{margin-left: 28px;}
 .popnews ul li a, .popnews ul li img, .popnews ul li span{display: block;}
-.popnews ul li a{width: 368px;height: 483px;}
-.popnews ul li div{margin: 15px auto;width: 340px;height: 340px;border-radius: 4px;overflow: hidden;background: pink;}
-.popnews ul li:hover div{transform: scale(1.1);}
-.popnews ul li:first-child div{background: url("../images/main/sns_bg_01.jpg") no-repeat;}
-.popnews ul li:nth-child(2) div{background: url("../images/main/sns_bg_02.jpg") no-repeat;}
-.popnews ul li:last-child div{background: url("../images/main/sns_bg_03.jpg") no-repeat;}
+.popnews ul li a{width: 100%;height: 100%;position: absolute;}
+.snsbox, .snsbox div{width: 340px;height: 340px;}
+.pop_list .snsbox{margin: 15px auto;border-radius: 4px;overflow: hidden;}
+.pop_list .snsbox div{transition: all cubic-bezier(0.68, 0.07, 0.2, 0.97) 0.5s;}
+.list1 .snsbox div{background: url("../images/main/sns_bg_01.jpg") no-repeat;}
+.list2 .snsbox div{background: url("../images/main/sns_bg_02.jpg") no-repeat;}
+.list3 .snsbox div{background: url("../images/main/sns_bg_03.jpg") no-repeat;}
+.pop_list:hover .snsbox div, .pop_list a:focus .snsbox div{transform: scale(1.1);}
+
 .popnews ul li span{font-weight: 700;line-height: 16px;position: absolute;left: 80px;bottom: 138px;z-index: 10;}
 .popnews ul li span::before{content: "";position: absolute;left: -52px;top: -12px;background: url("../images/main/icon_sns_pp.png") no-repeat;width: 40px;height: 40px;z-index: 10;}
 .popnews ul li::before{content: "";position: absolute;left: 14px;bottom: 109px;background: #fff;width: 188px;height: 72px;border-radius: 0 36px 36px 0;z-index: 10;}
 .popnews ul li p{line-height: 28px;color: #666;margin-top: 45px;margin-left: 40px;}
+
+
+/* .popnews ul li div{margin: 15px auto;width: 340px;height: 340px;border-radius: 4px;transition: all 0.3s;}
+.popnews ul li:hover div{transform: scale(1.2);}
+.popnews ul li:first-child div{background: url("../images/main/sns_bg_01.jpg") no-repeat;}
+.popnews ul li:nth-child(2) div{background: url("../images/main/sns_bg_02.jpg") no-repeat;}
+.popnews ul li:last-child div{background: url("../images/main/sns_bg_03.jpg") no-repeat;}*/
