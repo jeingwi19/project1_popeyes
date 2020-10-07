@@ -81,4 +81,20 @@ $(document).ready(function() {
 	});
 
 
+
+
+	
+	
+});
+
+$(document).ready(function() {
+	//키보드 제어 접근성 추가
+	$('.card').on({ //.card를 찾아서 foucusin해라
+	focusin: function () {
+		$(this).addClass('flip');//focus가 되었을땐 .flip을 추가해주어라
+	},
+	focusout: function () {
+		$(this).removeClass('flip');//focus가 out 되었을땐 .flip을 해제해라.
+	}
+	});
 });
