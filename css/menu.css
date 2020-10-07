@@ -58,14 +58,14 @@
 
 .fliter_box ul:last-child{position: absolute;border: 1px solid #d9d9d9;width: 118px;border-radius: 14px;height: 38px;}
 .fliter_box ul{position: absolute;top: 40px;left: 0;width: 118px;height: 72px;padding: 40px 0 10px;background: #fff;border: 1px solid #d9d9d9;line-height: 38px;border-radius: 14px;z-index: -1;transition: all 0.3s;}
-.fliter_box ul li button{display: none;position: absolute;top: 0;left: -12px;font-size: 16px;font-weight: 700;color: #666;}
+.fliter_box ul li button{/* display: none; */position: absolute;top: 0;left: -12px;font-size: 16px;font-weight: 700;color: #666;}
 .fliter_box:hover ul li button{display: block;margin-left: 22px;font-size: 16px;font-weight: 700;color: #666;line-height: 38px;position: relative;top: 0;}
 
 .fliter_box ul li:hover button, .fliter_box ul li button:focus{text-decoration: underline;color: #000;}
 
 .btn_filter_result{position: absolute;}
 .btn_filter_result button{font-family: "Noto Sans KR";font-size: 18px;font-weight: 500;width: 60px;height: 40px;background: #666;border-radius: 14px;color:#fff;position: absolute;left: 1060px;top: -24px;z-index: 10;}
-#menuTab .fliter_box .dropdown_list{width: 118px;position: absolute;top: 40px;margin: 0;}
+#menuTab .fliter_box .dropdown_list{width: 118px;position: absolute;top: 0px;margin: 0;height: 72px;}
 
 /* menuTab tabpanel */
 #menuTab .tabpanel ul{width: 1200px;margin: 80px auto;}
