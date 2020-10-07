@@ -85,7 +85,7 @@ button{font-family: "Noto Sans KR";}
 #tabpanelTogo .step2{margin-top: -40px;}
 #orderTab .tablist li:nth-child(2).active{margin-bottom: 920px;}
 
-#tabpanelTogo .map{width: 1028px;height: 500px;margin-top: 4px;background: #e9e9e9;border-radius: 14px;overflow: hidden;box-sizing: border-box;}
+#tabpanelTogo .map{width: 1028px;height: 500px;margin-top: 4px;background: #e9e9e9;border-radius: 14px;overflow: hidden;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 
 .btn_next{margin: 0 auto;width: 428px;margin-top: 40px;}
 .btn_next ul{height: 72px;}

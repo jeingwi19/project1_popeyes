@@ -50,7 +50,9 @@
 .result, .filter{font-size: 18px;font-weight: 500;display: inline-block;}
 
 /* dropdown menu */
-.filter{position: absolute;right: 154px;z-index: 1;top: inherit;}
+#menuTab .tabpanel .dropdown_list{margin-top: -40px;width: 118px;height: 38px;padding: 0;}
+
+.filter{position: absolute;right: 152px;z-index: 1;top: inherit;}
 .fliter_box{position: relative;}
 .fliter_box > a{float: left;height: 38px;}
 .fliter_box .fbox_tit{width: 96px;border: 1px solid #d9d9d9;padding-left: 22px;line-height: 38px;border-radius: 14px;background: #fff;}
@@ -58,14 +60,14 @@
 
 .fliter_box ul:last-child{position: absolute;border: 1px solid #d9d9d9;width: 118px;border-radius: 14px;height: 38px;}
 .fliter_box ul{position: absolute;top: 40px;left: 0;width: 118px;height: 72px;padding: 40px 0 10px;background: #fff;border: 1px solid #d9d9d9;line-height: 38px;border-radius: 14px;z-index: -1;transition: all 0.3s;}
-.fliter_box ul li button{/* display: none; */position: absolute;top: 0;left: -12px;font-size: 16px;font-weight: 700;color: #666;}
-.fliter_box:hover ul li button{display: block;margin-left: 22px;font-size: 16px;font-weight: 700;color: #666;line-height: 38px;position: relative;top: 0;}
+.fliter_box ul li button{display: none;position: absolute;top: 0;left: -12px;font-size: 16px;font-weight: 700;color: #666;}
+.fliter_box.on ul li button{display: block;margin-left: 22px;font-size: 16px;font-weight: 700;color: #666;line-height: 38px;position: relative;top: 40px;}
 
 .fliter_box ul li:hover button, .fliter_box ul li button:focus{text-decoration: underline;color: #000;}
 
 .btn_filter_result{position: absolute;}
 .btn_filter_result button{font-family: "Noto Sans KR";font-size: 18px;font-weight: 500;width: 60px;height: 40px;background: #666;border-radius: 14px;color:#fff;position: absolute;left: 1060px;top: -24px;z-index: 10;}
-#menuTab .fliter_box .dropdown_list{width: 118px;position: absolute;top: 0px;margin: 0;height: 72px;}
+#menuTab .fliter_box.on .dropdown_list{width: 118px;position: absolute;top: 0px;margin: 0;height: 120px;}
 
 /* menuTab tabpanel */
 #menuTab .tabpanel ul{width: 1200px;margin: 80px auto;}
@@ -95,7 +97,8 @@
 #contents{padding: 110px 0 110px 0;flex: 1;}
 
 /* quick bar */
-#followquick{position: fixed;bottom: 124px;right: 12%;min-width: 80px;height: 140px;background:#fd7907;overflow: initial;display: flex;align-items: center;justify-content: center;box-sizing: border-box;border-radius: 50px;cursor: pointer;z-index: 100;overflow: hidden;transition: box-shadow 0.2s ease-out}/* 수정 */
+#followquick{position: fixed;bottom: 124px;right: 12%;min-width: 80px;height: 140px;background:#fd7907;overflow: initial;display: flex;align-items: center;justify-content: center;box-sizing: border-box;border-radius: 50px;cursor: pointer;z-index: 100;overflow: hidden;transition: box-shadow 0.2s ease-out}
+#followquick:hover, #followquick a:focus{box-shadow: 0px 4px 20px 10px rgb(253, 122, 8, .5);}
 #followquick a{padding: 0 20px;color: #fff;font-size: 28px;line-height: 32px;}
 #followquick a::before{content:"";position: absolute;background: url("../images/menu/btn_quick_bg.png");left: calc(50% - 30px);top: calc(100% - 40px);width: 60px;height: 60px;}
 #followquick a span{font-family: yg-jalnan;margin-bottom: 20px;display: inline-block;}

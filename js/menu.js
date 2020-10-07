@@ -1,8 +1,56 @@
-	/* 패밀리사이트 */
+$(document).ready(function() {
+	//1) 로딩이 완료된후 초기화면 설정
+	var tgIdx = $('#menuTab').data('index');
+	var tg1 = '#menuTab #tab' + tgIdx;
+	var tg2 = '#menuTab #tabpanel' + tgIdx;
+	$(tg1).addClass('active').attr({'tabIndex': 0, 'aria-selected': true}).siblings().attr('aria-selected', false);
+	$(tg2).addClass('active').attr({'tabIndex': 0, 'aria-hidden': false}).siblings('#tabpanel').attr('aria-hidden', true);
+
+  /* 2) 탭버튼에서 키보드를 누르는 이벤트(keydown) - 키보드 제어*/
+  $('.tab').on('keydown', function (e) {
+    var key = e.keyCode;
+    console.log(key); //왼쪽방향키 37 , 오른쪽 방향키 39, 스페이스바 32 , 엔터 13
+    switch (key) {
+      case 37:    //왼쪽 방향키
+        $(this).attr('tabIndex', -1);
+        if ($(this).hasClass('first')) $(this).siblings('.last').attr('tabIndex', 0).focus();
+        else $(this).prev().attr('tabIndex', 0).focus();
+        break;
+      case 39:  //오른쪽 방향키
+        $(this) .attr('tabIndex', -1);
+        if ($(this).hasClass('last')) $(this).siblings('.first').attr('tabIndex', 0).focus();
+        else $(this).next().attr('tabIndex', 0).focus();
+        break;
+      case 36:  //HOME 키는 가장 처음으로
+        e.preventDefault();
+        $(this).siblings('.first').attr('tabIndex', 0).focus();
+        break;
+      case 35:  //END 키는 가장 마지막으로
+        e.preventDefault();
+        $(this).siblings('.last').attr('tabIndex', 0).focus();
+        break;
+      case 32:  //스페이스바
+      case 13:  //엔터
+        var $tg = $(this);
+        activeOn($tg);
+        break;
+    }
+  });
+
+  //3) 탭 클릭 이벤트
+  $('.tab').on('click', function () {
+    var $tg = $(this);
+    activeOn($tg);
+  });
+
+  function activeOn($target) {
+    $target.addClass('active').attr({'aria-selected': true, tabIndex: 0}).siblings().removeClass('active').attr({'aria-selected': false, tabIndex: -1});
+    $('#' + $target.attr('aria-controls')).addClass('active').attr({'aria-hidden': false, tabIndex: 0}).siblings('.tabpanel').removeClass('active').attr({'aria-hidden': true, tabIndex: -1});
+  }
+
+  /* 정렬하기 */
 	var $fliter_box = $("#filter .fliter_box"); //.fliter_box는 변수 $fliter_box라고 명한다 중요
-	var $btn = $fliter_box.find(".fbox_tit"); //depth1 a:fliter_box Site라는 텍스트가 담긴 링크 / .fliter_box의 첫번째 자식의 button태그를 찾아라
-	var $btnSubmit = $fliter_box.find("button").last(); //확인(새창열기 버튼)
-	var tgHref;
+	var $btn = $fliter_box.children("a"); //depth1 a:fliter_box Site라는 텍스트가 담긴 링크를 찾아라
 
 	//1-1) $btn을 클릭해서 ul 태그 열어주기
 	$btn.on("click", function (e) {
@@ -33,17 +81,4 @@
 	});
 
 
-
-
-	
-	//follow quick menu
-	// $(window).scroll(function () {
-	// 	var scrollTop = $(document).scrollTop();
-	// 	if (scrollTop < 900) {
-	// 		scrollTop = 720;
-	// 	}
-	// 	$("#followquick").stop();
-	// 	$("#followquick").animate({
-	// 		"top": scrollTop
-	// 	});
-	// });
+});
