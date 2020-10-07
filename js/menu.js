@@ -1,6 +1,6 @@
 	/* 패밀리사이트 */
 	var $fliter_box = $("#filter .fliter_box"); //.fliter_box는 변수 $fliter_box라고 명한다 중요
-	var $btn = $fliter_box.find("button").first(); //depth1 a:fliter_box Site라는 텍스트가 담긴 링크 / .fliter_box의 첫번째 자식의 a태그를 찾아라
+	var $btn = $fliter_box.find(".fbox_tit"); //depth1 a:fliter_box Site라는 텍스트가 담긴 링크 / .fliter_box의 첫번째 자식의 button태그를 찾아라
 	var $btnSubmit = $fliter_box.find("button").last(); //확인(새창열기 버튼)
 	var tgHref;
 
@@ -26,13 +26,16 @@
 		$fliter_box.find(">ul>li>button").on("click", function (e) {
 			e.preventDefault();
 			var tgTxt = $(this).text();
-			tgHref = $(this).attr("href");
-			//console.log(tgTxt, tgHref);
+			//console.log(tgTxt);
 
-			$btn.text(tgTxt).focus().next().stop().show();
+			$btn.text(tgTxt).focus().next().stop().hide();
 		});
 	});
 
+
+
+
+	
 	//follow quick menu
 	// $(window).scroll(function () {
 	// 	var scrollTop = $(document).scrollTop();
