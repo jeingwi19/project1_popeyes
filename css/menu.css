@@ -77,8 +77,8 @@
 #menuTab .tabpanel .menu_txt, #menuTab .tabpanel .menu_info{padding: 0 20px;/* background: red; */}
 #menuTab .tabpanel .menu_txt p{width: 326px;height: 46px;}
 #menuTab .tabpanel .menu_info{margin-top: 38px;line-height: 28px;border-bottom: 1px solid #d9d9d9;padding-bottom: 28px;}
-#menuTab .tabpanel .menu_info a span{display: inline-block;margin-left: 36px;color: #666;}
-#menuTab .tabpanel .menu_info a span::before{content: "";position: absolute;left: 20px;top: 551px;width: 28px;height: 28px;background: url("../images/menu/icon_chat.png");}
+#menuTab .tabpanel .menu_info span{display: inline-block;margin-left: 36px;color: #666;}
+#menuTab .tabpanel .menu_info span::before{content: "";position: absolute;left: 20px;top: 551px;width: 28px;height: 28px;background: url("../images/menu/icon_chat.png");}
 #menuTab .tabpanel .menu_info .menu_event ul{height: 17px;}
 
 .menu_event ul li{float: left;}
@@ -89,13 +89,18 @@
 #menuTab .tabpanel{display: none;}
 #menuTab .tabpanel.active{display: block;}
 
-/* footer control */
-#wrap{display: flex;min-height: 100vh;flex-direction: column;}
-#contents{padding: 110px 0 110px 0;flex: 1;}
+/* footer control */ /* ie에서 flex적용 오류 */
+/* #wrap{display: flex;min-height: 100vh;-webkit-flex-direction: column;-ms-flex-direction: column;-moz-flex-direction: column;flex-direction: column;}
+#contents{padding: 110px 0 110px 0;-webkit-flex: 1;-ms-flex: 1;-moz-flex: 1;flex: 1;} */
+
+#tabpanel1, #tabpanel5, #tabpanel7{height: 1400px;}
+#tabpanel2, #tabpanel3{height: 760px;}
+#tabpanel4{height: 2700px;}
+#tabpanel6{height: 2080px;}
 
 /* quick bar */
-#followquick{position: fixed;bottom: 124px;right: 12%;min-width: 80px;height: 140px;background:#fd7907;overflow: initial;display: flex;align-items: center;justify-content: center;box-sizing: border-box;border-radius: 50px;cursor: pointer;z-index: 100;overflow: hidden;transition: box-shadow 0.2s ease-out}
-#followquick:hover, #followquick a:focus{box-shadow: 0px 4px 20px 10px rgb(253, 122, 8, .5);}
+#followquick{position: fixed;bottom: 124px;right: 12%;min-width: 80px;height: 140px;background:#fd7907;overflow: initial;display: flex;align-items: center;justify-content: center;box-sizing: border-box;border-radius: 50px;cursor: pointer;z-index: 100;overflow: hidden;-webkit-transition: box-shadow 0.2s ease-out;-moz-transition: box-shadow 0.2s ease-out;-o-transition: box-shadow 0.2s ease-out;transition: box-shadow 0.2s ease-out;}
+#followquick:hover, #followquick a:focus{-webkit-box-shadow: 0px 4px 20px 10px rgb(253, 122, 8, .5);-moz-box-shadow: 0px 4px 20px 10px rgb(253, 122, 8, .5);box-shadow: 0px 4px 20px 10px rgb(253, 122, 8, .5);}
 #followquick a{padding: 0 20px;color: #fff;font-size: 28px;line-height: 32px;}
 #followquick a::before{content:"";position: absolute;background: url("../images/menu/btn_quick_bg.png");left: calc(50% - 30px);top: calc(100% - 40px);width: 60px;height: 60px;}
-#followquick a span{font-family: yg-jalnan;margin-bottom: 20px;display: inline-block;}
+#followquick a span{font-family: "yg-jalnan";margin-bottom: 20px;display: inline-block;}

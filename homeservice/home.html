@@ -12,6 +12,20 @@
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/gnb.js"></script>
     <script src="../js/home.js"></script>
+    <script>
+        $(document).ready(function () {
+            //ie 스킵 네비게이션 작동
+            $('#skip a').on('click', function () {
+                var target = $(this).attr('href');
+                console.log(target); //#content
+
+                //$('#content')
+                $(target).attr('tabIndex', -1).focus();
+
+                return false;
+            });
+        });
+    </script>
 </head>
 <body>
     <div id="skip">
@@ -93,7 +107,7 @@
                                 <h3>주소를 입력해주세요</h3>
                             </div>
                             <div class="step_cnt">
-                                <form action="home.html" method="get" id="schAddr">
+                                <form action="home.html" method="get" id="schAddr" class="schAddr">
                                     <table><!-- border="1" -->
                                         <caption>주소 입력 필수 항목 2가지</caption>
                                         <colgroup>
@@ -101,7 +115,7 @@
                                             <col class="w1028">
                                         </colgroup>
                                         <tr>
-                                            <th id="addr">
+                                            <th id="addrAd">
                                                 <label for="addr1">
                                                     <span class="blind-i">배달받으실 주소 입력란</span>
                                                 </label>
@@ -152,7 +166,7 @@
                                 <h3>매장을 검색해주세요</h3>
                             </div>
                             <div class="step_cnt">
-                                <form action="home.html" method="get" id="schAddr">
+                                <form action="home.html" method="get" id="schAddrSt" class="schAddr">
                                     <table>
                                         <caption>매장검색</caption>
                                         <colgroup>
@@ -160,14 +174,14 @@
                                             <col class="w1028">
                                         </colgroup>
                                         <tr>
-                                            <th id="addr">
-                                                <label for="addr1">
+                                            <th id="addrSt">
+                                                <label for="addr5">
                                                     <span class="blind-i">매장찾기</span>
                                                 </label>
                                             </th>
                                             <td headers="addr" class="btn_group">
                                                 <span class="p_r">
-                                                    <input type="text" id="addr1" class="addr1" name="addr1" placeholder="매장명을 입력해주세요" title="매장명 입력" maxlength="40">
+                                                    <input type="text" id="addr5" class="addr5" name="addr5" placeholder="매장명을 입력해주세요" title="매장명 입력" maxlength="40">
                                                 </span>
                                                 <button type="button" class="btn btn_sf" >매장찾기</button>
                                                 <button type="button" class="bnt_cancle" title="입력삭제">
@@ -191,6 +205,7 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
                     </div>
                 </div>
             </article>

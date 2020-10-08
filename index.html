@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>파파이스 홈페이지</title>
-    <link rel="icon" href="images/common/popeyes_favicon.ico">
+    <link rel="icon" href="images/common/popeyes_favicon.ico"/>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/swiper-bundle.css">
     <link rel="stylesheet" href="css/main.css">
@@ -11,7 +11,7 @@
         <script src="js/html5shiv.min.js"></script>
     <![endif]-->
     <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/gnb.js"></script>
     <script>
         /* swiperjs.com/demos/#fraction_pagination */
@@ -25,7 +25,7 @@
             var mySwiper1 = new Swiper('.cnt1 .swiper-container', {
                 // Optional parameters
                 direction: 'horizontal', //vertical
-                loop: false, //터치할 경우 마지막 슬라이더에서 처음으로 되돌리지 않음
+                loop: true, //터치할 경우 마지막 슬라이더에서 처음으로 되돌리지 않음
 
                 // 이전, 다음 버튼
                 navigation: {
@@ -57,6 +57,18 @@
             $('.cnt7 .controller .autoplay').on('click', function () {
                 $(this).hide().siblings().show();
                 mySwiper7.autoplay.start();
+                return false;
+            });
+
+
+            //ie 스킵 네비게이션 작동
+            $('#skip a').on('click', function () {
+                var target = $(this).attr('href');
+                console.log(target); //#content
+
+                //$('#content')
+                $(target).attr('tabIndex', -1).focus();
+
                 return false;
             });
         });
@@ -149,21 +161,28 @@
                             </a>
                         </li>
                         <li>
-                            <a role="button" href="https://youtu.be/6lE3ajV3Ka0" title="파파이스 유튜브 새창" target="_blank"><img src="images/main/btn_youtube.jpg" alt="파파이스 더블 미트 머쉬룸 버거"></a>
+                            <div id="cf">
+                                <iframe width="572" height="300" src="https://www.youtube.com/embed/6lE3ajV3Ka0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen title="파파이스 신상 LTO3 더블미트 머쉬룸버거 영상"></iframe>
+                            </div>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="http://www.popeyes.co.kr/info/popeyesfranvhising.asp">
                                 <div class="btn_txt">
                                     <p>파파이스와 함께해요!</p>
                                     <h3>가맹점 모집</h3>
+                                    <span class="btn_go"></span>
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="http://www.popeyes.co.kr/info/communication.asp">
+                                <div class="menubg"></div>
                                 <div class="btn_txt">
                                     <p>고객의 소리를 듣겠습니다.</p>
                                     <h3>온라인 상담</h3>
+                                    <span class="btn_go"></span>
                                 </div>
                             </a>
                         </li>
@@ -179,7 +198,7 @@
                                 <div></div>
                             </div>
                             <span>popeyes_kr</span>
-                            <p>가심비 좋게! 햄버거 먹는 방법? <br>파파이스에서 할인쿠폰 받고 햄버거 먹자!</p>
+                            <p>가심비 좋게! 햄버거 먹는 방법? 💰<br>파파이스에서 할인쿠폰 받고 햄버거 먹자!</p>
                         </a>
                     </li>
                     <li class="pop_list list2">
@@ -188,7 +207,7 @@
                                 <div></div>
                             </div>
                             <span>popeyes_kr</span>
-                            <p>여름이 가고 시원한 가을이 왔는데, <br>#안심버거 먹기 딱 좋은 날씨 아닌가요?</p>
+                            <p>여름이 가고 시원한 가을이 왔는데,🎑 <br>#안심버거 먹기 딱 좋은 날씨 아닌가요?</p>
                         </a>
                     </li>
                     <li class="pop_list list3">
@@ -197,7 +216,7 @@
                                 <div></div>
                             </div>
                             <span>popeyes_kr</span>
-                            <p>안녕! 친구들 나는 새로운 #안심버거라구해 <br>#짱맛있어 안심하고 먹자구</p>
+                            <p>안녕! 친구들 나는 새로운 #안심버거라구해 <br>#짱맛있어 안심하고 먹자구🍔</p>
                         </a>
                     </li>
                 </ul>
