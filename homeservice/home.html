@@ -12,20 +12,6 @@
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/gnb.js"></script>
     <script src="../js/home.js"></script>
-    <script>
-        $(document).ready(function () {
-            //ie 스킵 네비게이션 작동
-            $('#skip a').on('click', function () {
-                var target = $(this).attr('href');
-                console.log(target); //#content
-
-                //$('#content')
-                $(target).attr('tabIndex', -1).focus();
-
-                return false;
-            });
-        });
-    </script>
 </head>
 <body>
     <div id="skip">
@@ -120,7 +106,7 @@
                                                     <span class="blind-i">배달받으실 주소 입력란</span>
                                                 </label>
                                             </th>
-                                            <td headers="addr" class="btn_group">
+                                            <td headers="addrAd" class="btn_group">
                                                 <span class="p_r">
                                                     <input type="text" id="addr1" class="addr1" name="addr1" placeholder="주소를 선택해주세요" title="배달 받을 주소 입력" maxlength="40">
                                                 </span>
@@ -160,7 +146,7 @@
                             <button type="button" class="btn_clear"><span>전체삭제</span></button>
                         </div>
                     </div>
-                    <div role="tabpanel" class="tabpanel p_a" id="tabpanelTogo" aria-labeledby="tabTogo">
+                    <div role="tabpanel" class="tabpanel p_a" id="tabpanelTogo" aria-labelledby="tabTogo">
                         <div class="step2">
                             <div class="step_tit">
                                 <h3>매장을 검색해주세요</h3>
@@ -179,7 +165,7 @@
                                                     <span class="blind-i">매장찾기</span>
                                                 </label>
                                             </th>
-                                            <td headers="addr" class="btn_group">
+                                            <td headers="addrSt" class="btn_group">
                                                 <span class="p_r">
                                                     <input type="text" id="addr5" class="addr5" name="addr5" placeholder="매장명을 입력해주세요" title="매장명 입력" maxlength="40">
                                                 </span>
@@ -193,7 +179,7 @@
                                 </form>
                             </div>
                             <div class="map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170367.60495761418!2d127.13501658826225!3d37.492301816111066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa4a897431ec60428!2z7YyM7YyM7J207IqkIO2UhOudvOyehOygkA!5e0!3m2!1sko!2skr!4v1601887582211!5m2!1sko!2skr" width="1028" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170367.60495761418!2d127.13501658826225!3d37.492301816111066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa4a897431ec60428!2z7YyM7YyM7J207IqkIO2UhOudvOyehOygkA!5e0!3m2!1sko!2skr!4v1601887582211!5m2!1sko!2skr" width="1028" height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             </div>
                             <div class="btn_next">
                                 <ul>

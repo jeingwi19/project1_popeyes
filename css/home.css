@@ -6,8 +6,8 @@ input::placeholder{color: #b7b7b7;}
 table{border-spacing: 0;border-collapse: collapse;}
 caption{width: 1px;height: 1px;overflow: hidden;margin: -1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
 input, select, textarea, button{font-family: inherit;z-index: inherit;font-style: inherit;}
-input[type="text"]{border: 2px solid #d9d9d9;padding: 20px 40px;-webkit-border-radius: 40px;-moz-border-radius: 40px;border-radius: 40px;font-family: "Noto Sans KR";font-size: 20px;color: #434343}
-button{font-family: "Noto Sans KR";}
+input[type="text"]{border: 2px solid #d9d9d9;padding: 20px 40px;-webkit-border-radius: 40px;-moz-border-radius: 40px;border-radius: 40px;font-family: Noto Sans KR;font-size: 20px;color: #434343}
+button{font-family: Noto Sans KR;}
 
 /* sub title */
 #contents .subbanner{height: 280px;background: url("../images/homeservice/subtit_bg_homeservice.jpg") no-repeat center;background-size: cover;}
@@ -42,7 +42,7 @@ button{font-family: "Noto Sans KR";}
 /* step1 */
 .tablist, .step_cnt{margin-top: 40px;}
 .tablist li{float: left;color: #b7b7b7;width: 500px;height: 200px;cursor: pointer;position: relative;overflow: hidden;-webkit-border-radius: 40px;-moz-border-radius: 40px;border-radius: 40px;}
-.tablist li, .tablist li:nth-child(1)::before, .tablist li:nth-child(2)::before{-o-transition: all 0.1s;-moz-transition: all 0.1s;-o-transition: all 0.1s;transition: all 0.1s;}
+.tablist li, .tablist li:nth-child(1)::before, .tablist li:nth-child(2)::before{-o-transition: width 0.5s;-moz-transition: width 0.5s;-o-transition: width 0.5s;transition: width 0.5s;}
 .tablist li:nth-child(1){background: url("../images/homeservice/tab1_off.png") no-repeat;}
 .tablist li:nth-child(1)::before{content: "";position: absolute;width: 0;height: 100%;top: 0;right: 0;z-index: 1;background-image: url("../images/homeservice/tab1_on.png");}
 .tablist li:nth-child(2){background: url("../images/homeservice/tab2_off.png") no-repeat;}
@@ -100,4 +100,4 @@ button{font-family: "Noto Sans KR";}
 
 /* 푸터 위치 조정 */
 /* #tabpanelOrder{height: 900px;} */
-#contents{height: 1720px;padding: 110px 0 0 0;}
+#contents{height: 1720px;padding: 110px 0 0 0;min-width: 1200px;}
