@@ -2,6 +2,39 @@
 /* font */
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:regular,500,700);
 
+@font-face{
+    font-family: Noto Sans KR;
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/NotoSans-Regular.eot");
+    src: url("../fonts/NotoSans-Regular.eot#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans-Regular.woff2") format("woff2"),
+    url("../fonts/NotoSans-Regular.woff") format("woff"),
+    url("../fonts/NotoSans-Regular.otf") format("opentype");
+}
+
+@font-face{
+    font-family: Noto Sans KR;
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/NotoSans-Medium.eot");
+    src: url("../fonts/NotoSans-Medium.eot#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans-Medium.woff2") format("woff2"),
+    url("../fonts/NotoSans-Medium.woff") format("woff"),
+    url("../fonts/NotoSans-Medium.otf") format("opentype");
+}
+
+@font-face{
+    font-family: Noto Sans KR;
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/NotoSans-Bold.eot");
+    src: url("../fonts/NotoSans-Bold.eot#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans-Bold.woff2") format("woff2"),
+    url("../fonts/NotoSans-Bold.woff") format("woff"),
+    url("../fonts/NotoSans-Bold.otf") format("opentype");
+}
+
 /* tag reset */
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, p, button{margin: 0;padding: 0;}
 h1, h2, h3, h4, h5, h6{font-size: inherit;}
@@ -22,7 +55,7 @@ header, nav, section, article, footer{display: block;}
 .clearfix::after{content: ""; display: block; clear:both;}
 .area{width: 1200px;margin: 0 auto;}
 
-body{font-family: "Noto Sans KR";font-size: 16px;color: #434343;}
+body{font-family: Noto Sans KR;font-size: 16px;color: #434343;}
 
 /* skip navigation. 반복영역 건너뛰기 */
 #skip a{position: absolute; top: 0; left: -9999px; z-index:150;}
@@ -42,10 +75,10 @@ header.active::after{content:""; position:absolute; left: 0; top: 110px;  width:
 #gnb>ul>li>a{font-size: 20px;font-weight: bold;color: #434343; height: 109px;line-height: 109px; }
 #gnb>ul>li:hover>a, #gnb>ul>li.on>a, #gnb>ul>li>a:focus{color: #fd7907;}
 
-#gnb ul li ul{position: absolute; top: 109px;left: 18px; padding-top: 1px; width: 1250px;height: 100px; color: #666; z-index: 110;}
+#gnb ul li ul{position: absolute; top: 109px;left: 18px; padding-top: 1px; width: 1250px;/* height: 100px; */ color: #666; z-index: 110;}
 #gnb ul li ul li{float: left;}
 /* #gnb ul li ul li+li{margin-left: 48px;} */
-#gnb ul li ul li a{font-size: 18px; color: #666; height: 100;padding: 40px 24px 43px;line-height: 17px;} 
+#gnb ul li ul li a{font-size: 18px; color: #666; /* height: 100px; */padding: 40px 24px 43px;line-height: 17px;} 
 #gnb ul li ul li:hover a, #gnb ul li ul li a:focus{color: #fff;} 
 
 .util{position: absolute;right: 0;top: calc(50% - 20px);}
@@ -53,7 +86,7 @@ header.active::after{content:""; position:absolute; left: 0; top: 110px;  width:
 
 
 /* footer */
-#footer{background: #434343;padding: 60px 0;height: 280px;font-size: 14px; color: #b7b7b7;box-sizing: border-box;}
+#footer{background: #434343;padding: 60px 0;height: 280px;font-size: 14px; color: #b7b7b7;box-sizing: border-box;min-width: 1200px;}
 #footer .area div{float: left;}
 #footer .area .ftlink {width: 172px;padding-left: 14px;}
 #footer .area .ftlink li{margin-bottom: 20px;}

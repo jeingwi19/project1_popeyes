@@ -1,4 +1,15 @@
 $(document).ready(function () {
+	//ie 스킵 네비게이션 작동
+	$('#skip a').on('click', function () {
+		var target = $(this).attr('href');
+		console.log(target); //#content
+
+		//$('#content')
+		$(target).attr('tabIndex', -1).focus();
+
+		return false;
+	});
+
 	var $header = $('#header');
 	var $gnb = $('#gnb > ul');
 	
@@ -40,5 +51,7 @@ $(document).ready(function () {
 		
 	//6) 페이지 로딩후 보여질 화면 => li.on 넣어서 스타일이 적용된 화면
 	if (dep1 >= 0) $gnb.trigger('mouseleave');
+
+	
 
 });

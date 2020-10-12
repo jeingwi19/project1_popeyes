@@ -3,7 +3,8 @@ $(document).ready(function() {
 	var tgIdx = $('#menuTab').data('index');
 	var tg1 = '#menuTab #tab' + tgIdx;
 	var tg2 = '#menuTab #tabpanel' + tgIdx;
-	$(tg1).addClass('active').attr({'tabIndex': 0, 'aria-selected': true}).siblings().attr('aria-selected', false);
+  $(tg1).addClass('active').attr({'tabIndex': 0, 'aria-selected': true}).siblings().attr('aria-selected', false);
+  $(tg1).addClass('flip').attr({'tabIndex': 0, 'aria-selected': true}).siblings().attr('aria-selected', false);
 	$(tg2).addClass('active').attr({'tabIndex': 0, 'aria-hidden': false}).siblings('#tabpanel').attr('aria-hidden', true);
 
   /* 2) 탭버튼에서 키보드를 누르는 이벤트(keydown) - 키보드 제어*/
@@ -49,7 +50,7 @@ $(document).ready(function() {
   }
 
   /* 정렬하기 */
-	var $fliter_box = $("#filter .fliter_box"); //.fliter_box는 변수 $fliter_box라고 명한다 중요
+	var $fliter_box = $(".filter .fliter_box"); //.fliter_box는 변수 $fliter_box라고 명한다 중요
 	var $btn = $fliter_box.children("a"); //depth1 a:fliter_box Site라는 텍스트가 담긴 링크를 찾아라
 
 	//1-1) $btn을 클릭해서 ul 태그 열어주기

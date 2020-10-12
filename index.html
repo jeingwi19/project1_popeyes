@@ -60,17 +60,6 @@
                 return false;
             });
 
-
-            //ie 스킵 네비게이션 작동
-            $('#skip a').on('click', function () {
-                var target = $(this).attr('href');
-                console.log(target); //#content
-
-                //$('#content')
-                $(target).attr('tabIndex', -1).focus();
-
-                return false;
-            });
         });
     </script>    
 </head>
@@ -105,8 +94,8 @@
                     </ul>
                 </nav>
                 <div class="util">
-                    <a data-toggle="modal" href="#" ><img src="images/common/icon_search1.png" alt="매장검색" title="매장검색 새창"></a>    
-                    <a data-toggle="modal" href="#" class="hdlogin"><img src="images/common/icon_login2.png" alt="로그인/회원가입" title="로그인/회원가입 새창"></a>
+                    <a data-toggle="modal" href="" ><img src="images/common/icon_search1.png" alt="매장검색" title="매장검색 새창"></a>    
+                    <a data-toggle="modal" href="" class="hdlogin"><img src="images/common/icon_login2.png" alt="로그인/회원가입" title="로그인/회원가입 새창"></a>
                 </div>    
             </div>
         </header>
@@ -129,6 +118,15 @@
                                     <span class="blind-i">EVENT</span>
                                     <p>놀라운 맛에! 놀라운 가격!</p>
                                     <p class="tit_big">런치세트</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <div class="txt_wrap">
+                                <div class="txt p_a">
+                                    <span class="blind-i">EVENT</span>
+                                    <p>매콤달콤 특제소스 듬뿍!</p>
+                                    <p class="tit_big">칠리퐁당치킨</p>
                                 </div>
                             </div>
                         </div>
@@ -167,8 +165,11 @@
                                     allowfullscreen title="파파이스 신상 LTO3 더블미트 머쉬룸버거 영상"></iframe>
                             </div>
                         </li>
-                        <li>
+                        <li id="quickMenu3">
                             <a href="http://www.popeyes.co.kr/info/popeyesfranvhising.asp">
+                                <div class="quick_bg">
+                                    <div></div>
+                                </div>
                                 <div class="btn_txt">
                                     <p>파파이스와 함께해요!</p>
                                     <h3>가맹점 모집</h3>
@@ -176,9 +177,11 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li id="quickMenu4">
                             <a href="http://www.popeyes.co.kr/info/communication.asp">
-                                <div class="menubg"></div>
+                                <div class="quick_bg">
+                                    <div></div>
+                                </div>
                                 <div class="btn_txt">
                                     <p>고객의 소리를 듣겠습니다.</p>
                                     <h3>온라인 상담</h3>
@@ -190,6 +193,7 @@
                 </div>
             </article>
             <article class="popnews area">
+                <div class="pop_bg"></div>
                 <h3>파파이스 소식</h3>
                 <ul class="popnews_list">
                     <li class="pop_list list1">
@@ -211,7 +215,7 @@
                         </a>
                     </li>
                     <li class="pop_list list3">
-                        <a role="button" href="https://www.instagram.com/p/CEqYcfQpE7o/?utm_source=ig_web_button_share_sheet" title="파피이스 인스타그램 새창" target="_blank">
+                        <a role="button" href="https://www.instagram.com/p/CEqYcfQpE7o/?utm_source=ig_web_button_share_sheet" title="파파이스 인스타그램 새창" target="_blank">
                             <div class="snsbox">
                                 <div></div>
                             </div>

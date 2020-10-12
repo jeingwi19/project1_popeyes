@@ -12,20 +12,6 @@
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/gnb.js"></script>
     <script src="../js/menu.js"></script>
-    <script>
-        $(document).ready(function () {
-            //ie 스킵 네비게이션 작동
-            $('#skip a').on('click', function () {
-                var target = $(this).attr('href');
-                console.log(target); //#content
-
-                //$('#content')
-                $(target).attr('tabIndex', -1).focus();
-
-                return false;
-            });
-        });
-    </script>
 </head>
 <body>
     <div id="skip">
@@ -58,8 +44,8 @@
                     </ul>
                 </nav>
                 <div class="util">
-                    <a data-toggle="modal" href="#" ><img src="../images/common/icon_search1.png" alt="매장검색" title="매장검색 새창"></a>    
-                    <a data-toggle="modal" href="#" class="hdlogin"><img src="../images/common/icon_login2.png" alt="로그인/회원가입" title="로그인/회원가입 새창"></a>
+                    <a data-toggle="modal" href="" ><img src="../images/common/icon_search1.png" alt="매장검색" title="매장검색 새창"></a>    
+                    <a data-toggle="modal" href="" class="hdlogin"><img src="../images/common/icon_login2.png" alt="로그인/회원가입" title="로그인/회원가입 새창"></a>
                 </div>    
             </div>
         </header>
@@ -152,7 +138,7 @@
                             </div>
                         </li>
                     </ul>
-                    <div role="tabpanel" class="tabpanel active" id="tabpanel1" aria-labelledby="tab1">
+                    <div role="tabpanel" class="tabpanel" id="tabpanel1" aria-labelledby="tab1">
                         <div class="result_tit">
                             메뉴 <span class="txt_count">4</span> 개
                         </div>
@@ -1153,9 +1139,10 @@
                     <div role="tabpanel" class="tabpaenl" id="tabpanel8" aria-labelledby="tab8"></div>
                 </div>
             </article>
-            <div id="followquick">
+            <div id="followquick" class="followq">
                 <a href="../homeservice/home.html" title="온라인 주문 페이지 이동">
-                <span>바로<br>주문</span></a>
+                    <span>바로<br>주문</span>
+                </a>
             </div>
         </section>
         <footer id="footer">
