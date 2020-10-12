@@ -5,8 +5,8 @@
 /* 서브 공통 스타일 */
 
 /* sub title */
-#contents{padding: 110px 0;min-width: 1200px;margin: 0 auto;}
-#contents .subbanner{height: 280px;background: url("../images/menu/subtit_bg_menu.jpg") no-repeat 50%;background-size: cover;width: 100%;}
+#contents{padding: 110px 0;min-width: 1200px;}
+#contents .subbanner{height: 280px;background: url("../images/menu/subtit_bg_menu.jpg") no-repeat 50%;background-size: cover;}
 .sub_bg{width: 1200px;margin: 0 auto;position: relative;}
 
 .subtit{left: 86px;top: 90px;position: absolute;}
@@ -100,17 +100,10 @@
 #tabpanel6{height: 2080px;}
 
 /* quick bar */
-<<<<<<< HEAD
-#followquick{position: fixed;bottom: 124px;right: 11%;min-width: 80px;height: 140px;background:#fd7907;align-items: center;justify-content: center;box-sizing: border-box;border-radius: 50px;cursor: pointer;z-index: 100;overflow: hidden;display: table;}
-
-#followquick a{color: #fff;font-size: 28px;line-height: 32px;height: 140px;display: table-cell;vertical-align: middle;text-align: center;-webkit-transition: all 0.2s ease-out;-moz-transition: all 0.2s ease-out;-o-transition: all 0.2s ease-out;transition: all 0.2s ease-out;border-radius: 50px;box-sizing: border-box;overflow: hidden;}
-#followquick::before{content:"";position: absolute;background: url("../images/menu/btn_quick_bg.png");left: calc(50% - 30px);top: calc(100% - 40px);width: 60px;height: 60px;}
-=======
 #followquick{position: fixed;bottom: 124px;right: 11%;min-width: 80px;height: 140px;background:#fd7907;align-items: center;justify-content: center;box-sizing: border-box;border-radius: 50px;cursor: pointer;z-index: 100;overflow: hidden;;display: table;}
 
-#followquick a{color: #fff;font-size: 28px;line-height: 32px;height: 140px;display: table-cell;vertical-align: middle;text-align: center;-webkit-transition: all 0.2s ease-out;-moz-transition: all 0.2s ease-out;-o-transition: all 0.2s ease-out;transition: all 0.2s ease-out;}
+#followquick a{color: #fff;font-size: 28px;line-height: 32px;height: 140px;display: table-cell;vertical-align: middle;text-align: center;-webkit-transition: all 0.2s ease-out;-moz-transition: all 0.2s ease-out;-o-transition: all 0.2s ease-out;transition: all 0.2s ease-out;border-radius: 50px;}
 #followquick a::before{content:"";position: absolute;background: url("../images/menu/btn_quick_bg.png");left: calc(50% - 30px);top: calc(100% - 40px);width: 60px;height: 60px;}
->>>>>>> e004fe47b9c13220abbad4132b8488e41d986cec
-#followquick a span{font-family: "yg-jalnan";margin-bottom: 20px;display: inline-block;}
+#followquick a span{font-family: "yg-jalnan";display: inline-block;width: 80px;height: 140px;box-sizing: border-box;border-radius: 50px;padding-top: 28px;}
 
 #followquick:hover a, #followquick a:focus{background: #c20031;}
