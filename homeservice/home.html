@@ -94,6 +94,9 @@
                             <div class="step_tit">
                                 <p class="blind-b">Step 2</p>
                                 <h3>주소를 입력해주세요</h3>
+                                <!-- html5 input에 추가된 속성
+                                    required(필수 입력 항목), placeholder(힌트글), autofocus(자동으로 포커스가 위치함), min(최소값), max(최대값), step(간격, 단계)
+                             -->
                             </div>
                             <div class="step_cnt">
                                 <form action="home.html" method="post" id="schAddr" class="schAddr">
@@ -113,10 +116,12 @@
                                                 <span class="p_r">
                                                     <input type="text" id="addr1" class="addr1" name="addr1" placeholder="주소를 선택해주세요" title="배달 받을 주소 입력" maxlength="40">
                                                 </span>
-                                                <button type="button" class="bnt_cancle" title="입력삭제">
-                                                    <img src="../images/homeservice/icon_cancel.png" alt="입력삭제">
+                                                <button type="button" class="bnt_cancle" id="btnClearAddr" title="입력삭제">
+                                                    <span class="blind-b">입력삭제</span>
+                                                    <img src="../images/homeservice/icon_cancel.png" alt="">
                                                 </button>
-                                                <button type="button" class="btn btn_f" title="주소찾기 새창열림">주소찾기</button>
+                                                <!-- 도로명주소 api : https://www.juso.go.kr/addrlink/devAddrLinkRequestGuide.do?menu=roadApi -->
+                                                <a href="https://www.juso.go.kr/addrlink/addrLinkUrl.do" target="_blank" class="btn btn_f" title="주소찾기 새창열림"><span>주소찾기</span></a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -127,11 +132,12 @@
                                             </th>
                                             <td headers="addrDt" class="btn_group">
                                                 <input type="text" id="addr2" class="addr2" name="addr2" placeholder="상세주소를 입력해주세요" title="상세주소 입력" maxlength="20">
+                                                <!-- 동,호는 필수 입력사항X => maxlength="4"속성만 입력-->
                                                 <input type="text" id="addr3" class="addr3" name="addr3" title="동 입력" maxlength="4">
                                                 동
                                                 <input type="text" id="addr4" class="addr4" name="addr4" title="호 입력" maxlength="4">
                                                 호
-                                                <button type="button" class="btn btn_s" title="검색하기">검색하기</button>
+                                                <button type="submit" class="btn btn_s" title="검색하기">검색하기</button>
                                                 <p>*아파트/빌라 동호수, 사무실 층수, 기타 위치 정보는 상세주소에 입력해 주세요. <br>*번지/ 건물명이 없는 경우 배달이 불가능합니다.</p>
                                             </td>
                                         </tr>
@@ -174,8 +180,9 @@
                                                 <span class="p_r">
                                                     <input type="text" id="addr5" class="addr5" name="addr5" placeholder="매장명을 입력해주세요" title="매장명 입력" maxlength="40">
                                                 </span>
-                                                <button type="button" class="bnt_cancle" title="입력삭제">
-                                                    <img src="../images/homeservice/icon_cancel.png" alt="입력삭제">
+                                                <button type="button" class="bnt_cancle" id="btn_clear_shop">
+                                                    <span class="blind-b">입력삭제</span>
+                                                    <img src="../images/homeservice/icon_cancel.png" alt="">
                                                 </button>
                                                 <button type="button" class="btn btn_sf" >매장찾기</button>
                                             </td>

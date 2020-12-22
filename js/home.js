@@ -61,4 +61,47 @@ $(document).ready(function() {
 
     window.open(popupArr[btnNum], 'popup', 'left='+leftPos+', top='+topPos+', width=853, height=480');
   });
+
+
+  /* 검색하기 버튼 클릭 */
+  $('#schAddr').on('submit', function(){
+    var _addr = $('#addr1'); //주소입력
+    var _detailAddr = $('#addr2'); //상세주소입력
+    var _buildingNum = $('#addr3'); //동
+    var _doorNum = $('#addr4'); //호
+
+    if(!resultAddr(_addr, /.{5,40}/, '필수! 주소를 입력해주세요')) return false;
+    if(!resultAddr(_detailAddr, /.{2,20}/, '필수! 상세주소를 입력해주세요')) return false;
+    /* if(!resultAddr(_buildingNum, /^[0-9]{1,4}?[a-z]{1,4}$/, '동 주소를 입력해주세요')) return false;
+    if(!resultAddr(_doorNum, /^[0-9]{2,4}$/, '호 수를 입력해주세요')) return false; */
+    alert(
+      '주소 : ' + _addr.val() +
+      '\n상세주소 : ' + _detailAddr.val() +
+      '\n동 : ' + _buildingNum.val() +
+      '\n호 : ' + _doorNum.val()
+    );
+  });
+
+  function resultAddr(_tg, regExp, msg){
+    /* var _tg = $('#name');
+    var regExp = /^[가-힣]{2,10}$/; //한글만 2~10글자
+    var msg = '이름은 한글만 2~10로 작성'; */
+    var result = regExp.test(_tg.val());
+    //alert(result);
+    console.log(result);
+
+    if(result){
+      return true;
+    } else{
+      alert(msg);
+      _tg.focus();
+      return false;
+    }
+  }
+
+  /* 주소 입력란 삭제버튼 클릭 */
+  /* 참고 링크: https://leechwin.tistory.com/entry/Bootstrap-Input-%ED%83%9C%EA%B7%B8%EC%9D%98-Clear-%EB%B2%84%ED%8A%BC */
+  $('#btnClearAddr').on('click', function(){
+    $('#addr1').val('').trigger('change').focus();
+  });
 });

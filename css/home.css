@@ -69,6 +69,7 @@ button{font-family: Noto Sans KR;}
 .btn_group{position: relative;}
 .btn_group .btn{font-size: 24px;font-weight: 700;width: 200px;height: 72px;text-align: center;-webkit-border-radius: 36px;-moz-border-radius: 36px;border-radius: 36px;color: #fff;position: absolute;right: 0;top: 2px;}
 .btn_group .btn_f{background: #b7b7b7;}
+.btn_group a span{display: inline-block;line-height: 72px;}
 .btn_group .btn_s, .btn_group .btn_sf{background: #ff7b00;}
 
 .bnt_cancle{position: absolute;top: calc(50% - 28px);right: 268px;}
