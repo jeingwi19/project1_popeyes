@@ -104,4 +104,8 @@ $(document).ready(function() {
   $('#btnClearAddr').on('click', function(){
     $('#addr1').val('').trigger('change').focus();
   });
+
+  $('#btn_clear_shop').on('click', function(){
+    $('#addr5').val('').trigger('change').focus();
+  });
 });
